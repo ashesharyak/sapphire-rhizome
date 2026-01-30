@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Partners | Global Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Specific styles for the partner grid */
+        .partner-logo {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            filter: grayscale(100%); /* Keeps it minimal and professional */
+            opacity: 0.7;
+            transition: all 0.4s ease;
+            margin-bottom: 15px;
+        }
+
+        .card:hover .partner-logo {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+
+        .partner-name {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sapphire Rhizome Reverie" style="height: 45px; width: auto; display: block;">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="partners.html">Partners</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="content-section" style="margin-top: 80px; text-align: center;">
+        <h2 data-aos="fade-up">Trusted By Industry Leaders</h2>
+        <p data-aos="fade-up" data-aos-delay="100" style="margin-bottom: 4rem;">We collaborate with the world's most innovative food brands and visionary leaders.</p>
+        
+        <div class="grid-3">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/partner1.png" alt="Satakshi Singh" class="partner-logo">
+                <h3 class="partner-name">Satakshi Singh</h3>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/partner2.png" alt="Praful Ranjan" class="partner-logo">
+                <h3 class="partner-name">Praful Ranjan</h3>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/partner3.png" alt="Ashesh Aryak" class="partner-logo">
+                <h3 class="partner-name">Ashesh Aryak</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>&copy; 2026 Sapphire Rhizome Reverie Food Labs.</p></footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+</body>
+</html>
